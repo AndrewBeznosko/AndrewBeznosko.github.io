@@ -1,1 +1,1 @@
-# link to dev reository: https://github.com/AndrewBeznosko/ciklum
+# link to dev repository: https://github.com/AndrewBeznosko/ciklum
