@@ -1,0 +1,396 @@
+.m1-form ::-webkit-input-placeholder {
+ color: #333;
+}
+
+.m1-form ::-moz-placeholder {
+ color: #333;
+}
+
+.m1-form :-moz-placeholder {
+ color: #333;
+}
+
+.m1-form :-ms-input-placeholder {
+ color: #333;
+}
+
+.m1-form :focus::-webkit-input-placeholder {
+ color: transparent;
+}
+
+.m1-form :focus::-moz-placeholder {
+ color: transparent;
+}
+
+.m1-form :focus:-moz-placeholder {
+ color: transparent;
+}
+
+.m1-form :focus:-ms-input-placeholder {
+ color: transparent;
+}
+
+.hidden {
+ display: none;
+}
+
+.center {
+ text-align: center;
+}
+
+.just {
+ text-align: justify;
+ -moz-text-align-last: center;
+ text-align-last: center;
+}
+
+.clrfix:after {
+ content: '';
+ display: block;
+ clear: both;
+}
+
+.clear {
+ clear: both;
+ height: 0;
+}
+
+.ulfix {
+ font-size: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-weight: 700;
+}
+
+b, strong {
+ font-weight: 700;
+}
+
+body {
+ width: 100%;
+ min-width: 320px;
+ padding: 0;
+ margin: 0 auto;
+ font-family: 'Museo Sans', Arial, Helvetica, sans-serif;
+ font-weight: 400;
+ font-size: 20px;
+ line-height: 24px;
+ color: #333;
+ background: #1b2440;
+}
+
+section {
+ width: 100%;
+ margin: 0 auto;
+ padding: 35px 0;
+}
+
+.wrap {
+ position: relative;
+ background: #fff;
+ width: 480px;
+ height: 100%;
+ padding: 0;
+ margin: 0 auto;
+}
+
+.wrap:after {
+ clear: both;
+ content: "";
+ display: table;
+}
+
+.nopad {
+ padding: 0;
+}
+
+.m1-form input.field {
+ position: relative;
+ display: block;
+ outline: 0;
+ border: none;
+ background: #fff;
+ width: 100%;
+ height: 80px;
+ margin: 0 auto 15px;
+ padding: 0 20px;
+ font-family: 'DINRoundPro', Arial, Helvetica, sans-serif;
+ font-size: 20px;
+ font-weight: 400;
+ color: #333;
+ text-align: center;
+ -webkit-border-radius: 40px;
+ -moz-border-radius: 40px;
+ border-radius: 40px;
+ -webkit-transition: all 0.2s;
+ -moz-transition: all 0.2s;
+ -o-transition: all 0.2s;
+ -ms-transition: all 0.2s;
+ transition: all 0.2s;
+}
+
+.button-m {
+ position: relative;
+ display: block;
+ width: 380px;
+ height: 89px;
+ line-height: 93px;
+ margin: 0 auto;
+ border: none;
+ text-align: center;
+ font-family: 'DINRoundPro', Arial, Helvetica, sans-serif;
+ font-size: 28px;
+ font-weight: 700;
+ text-transform: uppercase;
+ text-decoration: none;
+ cursor: pointer;
+ color: #fff;
+ text-shadow: 0 2px 0 rgba(160, 121, 3, 0.6);
+ background: #febf01;
+ background: -moz-linear-gradient(top, #febf01 0%, #febf01 100%);
+ background: -webkit-linear-gradient(top, #febf01 0%, #febf01 100%);
+ background: linear-gradient(to bottom, #febf01 0%, #febf01 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#febf01', endColorstr='#febf01', GradientType=0);
+
+ -webkit-box-shadow: 0 4px 0 #df970c;
+ box-shadow: 0 4px 0 #df970c;
+ -webkit-border-radius: 45px;
+ -moz-border-radius: 45px;
+ border-radius: 45px;
+
+ -webkit-transition: all 0.2s;
+ -moz-transition: all 0.2s;
+ -o-transition: all 0.2s;
+ -ms-transition: all 0.2s;
+ transition: all 0.2s;
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
+}
+
+.button-m:active {
+ top: 1px;
+}
+
+.m1-form {
+ width: 380px;
+ margin: 0 auto;
+}
+
+.m1-form .button-m {
+ width: 100%;
+}
+
+h2.title {
+ font-weight: 400;
+ font-size: 34px;
+ color: #333;
+ line-height: 36px;
+ padding: 0 30px;
+ margin: 0 0 30px;
+ text-align: center;
+}
+
+h2.title span {
+ display: block;
+ font-family: 'DINRoundPro', Arial, Helvetica, sans-serif;
+ font-weight: 700;
+ color: #64c977;
+}
+
+h2.title.white,
+h2.title.white span {
+ color: #fff;
+}
+
+h2.title.bold {
+ font-family: 'DINRoundPro', Arial, Helvetica, sans-serif;
+ font-weight: 700;
+}
+
+/*   timer   */
+
+.timer {
+ padding-bottom: 10px;
+}
+
+.timer > p {
+ font-size: 24px;
+ font-weight: 700;
+ color: #fff;
+ text-align: center;
+ padding-bottom: 7px;
+}
+
+.el-timer {
+ width: 380px;
+ margin: 0 auto;
+ color: #fff;
+}
+
+.time_circles {
+ position: relative;
+ width: 100%;
+ height: 100%;
+}
+
+.time_circles > div {
+ position: absolute;
+ text-align: center;
+}
+
+.time_circles > div > h4 {
+ margin: 0;
+ padding: 0;
+ text-align: center;
+ text-transform: uppercase;
+ font-family: 'DINRoundPro', Arial, Helvetica, sans-serif;
+ line-height: 1.1em;
+}
+
+.time_circles > div > span {
+ display: block;
+ width: 100%;
+ text-align: center;
+ font-family: 'Helvetica', 'Arial', sans-serif;
+ font-size: 300%;
+ line-height: 1.2em;
+}
+
+/*   price   */
+
+.price {
+ width: 420px;
+ margin: 0 auto 25px;
+ background: #fff;
+ -webkit-border-radius: 40px;
+ -moz-border-radius: 40px;
+ border-radius: 40px;
+}
+
+.price:after {
+ display: block;
+ clear: both;
+ content: '';
+}
+
+.price .old,
+.price .new {
+ float: left;
+ width: 50%;
+ height: 94px;
+ font-family: 'DINRoundPro', Arial, Helvetica, sans-serif;
+ line-height: 28px;
+ text-align: center;
+ padding-top: 15px;
+}
+
+.price .new {
+ background: #64c977;
+ color: #fff;
+ -webkit-border-radius: 40px;
+ -moz-border-radius: 40px;
+ border-radius: 40px;
+}
+
+.price p {
+ font-size: 17px;
+}
+
+.price .val {
+ font-size: 33px;
+ text-transform: uppercase;
+}
+
+.price .new .val {
+ font-weight: 700;
+}
+
+.price .val i {
+ font-size: 26px;
+ font-style: normal;
+}
+
+.price .old .val span {
+ text-decoration: line-through;
+}
+
+/*   video   */
+
+.video-container {
+ position: relative;
+ padding-bottom: 56.25%;
+ height: 0;
+ overflow: hidden;
+ background: #333;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed,
+.video-container .youtube {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+}
+
+.youtube {
+ background: #333;
+}
+
+/*   slick-dots   */
+
+.slick-dots {
+ height: 23px;
+ text-align: center;
+ margin-top: 25px;
+}
+
+.slick-dots:after {
+ clear: both;
+ content: "";
+ display: block;
+ height: 0;
+ width: 0;
+ visibility: hidden;
+}
+
+.slick-dots li {
+ display: inline-block;
+ vertical-align: top;
+ padding: 0 6px;
+ overflow: hidden;
+}
+
+.slick-dots li button {
+ display: block;
+ width: 23px;
+ height: 23px;
+ text-indent: -9999px;
+ background: none;
+ border: 2px solid #fff;
+ cursor: pointer;
+ -webkit-border-radius: 50%;
+ -moz-border-radius: 50%;
+ border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+ background: #fff;
+}
+
+/*   slider   */
+
+.slider .item {
+ padding: 0 30px;
+}
+
+.slider .item img {
+ display: block;
+ -webkit-border-radius: 40px;
+ -moz-border-radius: 40px;
+ border-radius: 40px;
+}
