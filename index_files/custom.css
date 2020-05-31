@@ -134,6 +134,11 @@
     margin: 2px 0;
 }
 
+.tn-elem__1818785131587135266415 b {
+    margin-top: 50px;
+    display: inline-block;
+}
+
 @media (max-width: 767.98px) {
     .tarifs__container {
         flex-wrap: wrap;
