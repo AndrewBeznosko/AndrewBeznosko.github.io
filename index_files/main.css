@@ -206,6 +206,18 @@ p {
     margin-right: 0;
     width: 100px;
     padding-bottom: 20px;
+    display: none;
+  }
+
+  .supercup .supercup__head .supercup__description .logo-mobile {
+    margin-right: -5px;
+    max-width: 145px;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .supercup .supercup__head .supercup__description .logo-mobile {
+    display: none;
   }
 }
 
@@ -219,6 +231,7 @@ p {
 @media only screen and (max-width: 550px) {
   .supercup .supercup__head .supercup__logo .title {
     font-size: 30px;
+    text-align: center;
   }
 }
 
@@ -226,6 +239,12 @@ p {
   padding-top: 30px;
   max-width: 460px;
   width: 100%;
+}
+@media only screen and (max-width: 550px) {
+  .supercup .supercup__head .supercup__description {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .supercup .supercup__head .supercup__description .subtitle {
@@ -239,7 +258,7 @@ p {
 @media only screen and (max-width: 550px) {
   .supercup .supercup__head .supercup__description .subtitle {
     letter-spacing: normal;
-    font-size: 23px;
+    font-size: 20px;
   }
 }
 
@@ -262,7 +281,20 @@ p {
 
 @media only screen and (max-width: 550px) {
   .supercup .supercup__head .supercup__description .date {
-    font-size: 16px;
+    display: none;
+  }
+}
+
+.supercup .supercup__head .supercup__logo .date-mobile {
+  font-size: 16px;
+  text-align: left;
+  padding: 15px;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 550px) {
+  .supercup .supercup__head .supercup__logo .date-mobile {
+    display: none;
   }
 }
 
@@ -344,7 +376,7 @@ p {
 
   .supercup .supercap__main .supercup__video {
     border-top-right-radius: 0;
-    border-bottom-right-radius: 0; 
+    border-bottom-right-radius: 0;
   }
 }
 
@@ -430,6 +462,7 @@ p {
 .lity-container {
   width: 100%;
   max-width: 540px !important;
+  z-index: 999999999 !important;
 }
 
 @media only screen and (max-width: 550px) {
@@ -483,6 +516,13 @@ p {
   font-family: "Gilroy", Arial, sans-serif;
   color: #000000;
   border-radius: 4px;
+}
+
+@media (max-width: 767.98px) {
+  #land-form #customers-phone,
+  .lity-container .participate-popup form input:not([type="checkbox"]) {
+    height: 60px;
+  }
 }
 
 .lity-container .participate-popup form input:not([type="checkbox"])::placeholder {}
