@@ -784,4 +784,9 @@ body .footer a {
     position: relative !important;
     top: 10px !important;
   }
+
+  .iti__country-list {
+    position: absolute;
+    z-index: 9999999999999999999999999999999999999999;
+  }
 }
