@@ -785,6 +785,7 @@ body .footer a {
     top: 10px !important;
   }
 
+  .iti-mobile .iti--container,
   .iti__country-list {
     z-index: 9999999999999999999999999999999999999999 !important;
   }
