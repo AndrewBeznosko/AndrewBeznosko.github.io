@@ -1264,7 +1264,6 @@ font-weight: 900;;
 @media (min-width: 1200px) {
   .lift-page .section__title {
     font-size: 60px;
-    text-align: center;
   }
 }
 .lift-page .section__subtitle {
@@ -1654,6 +1653,11 @@ font-weight: 900;;
 @media (max-width: 767px) {
   .lift-page .end__header-title {
     max-width: 250px;
+  }
+}
+@media (min-width: 767px) {
+  .lift-page .end__header-title {
+    text-align: center;
   }
 }
 @media (max-width: 767px) {
