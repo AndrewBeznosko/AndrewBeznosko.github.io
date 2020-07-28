@@ -169,6 +169,7 @@ header::before {
   z-index: 2;
   background: url(../img/grad.png) center no-repeat;
   background-size: cover;
+  opacity: 0.2;
 }
 
 header .container {
@@ -580,6 +581,7 @@ button.g_button.disabled:hover {
   z-index: 2;
   background: url(../img/grad.png) center no-repeat;
   background-size: cover;
+  opacity: 0.2;
 }
 
 #maps .section_title {
@@ -1082,6 +1084,7 @@ header .videoWrapper {
 }
 .block-book .book-cover {
   display: flex;
+  margin-top: 15px;
 }
 .block-book .min-title {
   margin: 10px 0 20px 20px;
