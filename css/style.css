@@ -450,14 +450,13 @@ button.g_button.disabled:hover {
   background: #1e82ff;
   text-align: center;
   padding: 24px 0px;
-  margin: 0 auto;
+  margin: 40px 0 0;
   text-decoration: none;
   cursor: pointer;
   border-radius: 5px;
   border: 0;
   border-bottom: 3px #1868cc solid;
   display: block;
-  margin-top: 0px;
   -webkit-transition: all .2s linear;
   -o-transition: all .2s linear;
   transition: all .2s linear;
@@ -484,7 +483,9 @@ button.g_button.disabled:hover {
 }
 
 .section_title span {
-  color: #1e82ff;
+  background: linear-gradient(45deg, #820417, #f70f31);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #why {
@@ -1007,11 +1008,11 @@ header .header_text {
 }
 header .header_text h1 {
   text-align: left;
-  font-size: 67px;
+  font-size: 50px;
   line-height: 1.2;
 }
 header .header_text > p {
-  text-align: left;
+  text-align: center;
   margin: 0;
   margin-top: 20px;
 }
