@@ -149,8 +149,8 @@ body.f-nav .top_container {
   text-decoration: underline;
 }
 
-header {
-  background-image: url(../img/header_bg.jpg);
+.bg {
+  background-image: url(../img/bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -159,17 +159,17 @@ header {
   padding-bottom: 150px;
 }
 
-header::before {
+.bg::before {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   content: '';
   display: block;
-  z-index: 2;
+  z-index: 0;
   background: url(../img/grad.png) center no-repeat;
   background-size: cover;
-  opacity: 0.2;
+  opacity: 0.7;
 }
 
 header .container {
@@ -570,7 +570,6 @@ button.g_button.disabled:hover {
 
 #maps {
   color: #fff;
-  background: url("../img/maps.jpg") no-repeat center center;
   background-size: cover;
   padding: 80px 0 150px 0;
   position: relative;
@@ -578,19 +577,6 @@ button.g_button.disabled:hover {
 #maps .container {
   z-index: 3;
   position: sticky;
-}
-
-.maps::before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  content: '';
-  display: block;
-  z-index: 2;
-  background: url(../img/grad.png) center no-repeat;
-  background-size: cover;
-  opacity: 0.2;
 }
 
 #maps .section_title {
@@ -1033,8 +1019,8 @@ header .header_text > p > span {
   margin-bottom: 15px;
 }
 header .video-row {
-  max-width: 500px;
-  min-width: 500px;
+  max-width: 560px;
+  min-width: 560px;
   margin: 0 auto;
 }
 @media (max-width: 767px) {
@@ -1100,10 +1086,6 @@ header .videoWrapper {
   .block-book p {
     font-size: 18px;
   }
-}
-.block-book .book-cover {
-  display: flex;
-  margin-top: 15px;
 }
 .block-book .min-title {
   margin: 10px 0 20px 20px;
