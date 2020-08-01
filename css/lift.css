@@ -2312,7 +2312,7 @@ font-weight: 900;;
   display: -ms-flexbox;
   display: flex;
   padding: 15px;
-  border: 5px solid #fff;
+  border: 5px solid #00bde3;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -2523,6 +2523,10 @@ font-weight: 900;;
   position: relative;
   z-index: 2;
   padding: 40px 0px 0px 40px;
+  background-image: url("../img/luda.png");
+  background-size: auto 100%;
+  background-position: center right;
+  background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
   .lift-page .programm__row {
@@ -2728,11 +2732,11 @@ font-weight: 900;;
 }
 .lift-page .programm-item__info-cube {
   padding: 10px 10px 20px 10px;
-  border: 5px solid #fff;
+  border: 5px solid #00bde3;
 }
 @media (min-width: 1025px) {
   .lift-page .programm-item__info-cube {
-    width: 85%;
+    width: 100%;
     padding: 20px 20px 40px 20px;
     border-width: 10px;
   }
@@ -3764,7 +3768,8 @@ font-weight: 900;;
   line-height: 27px;
   font-weight: 600;
 }
-.lift-page .register .h-bottom .hb-right form input, .lift-page .register .h-bottom .hb-right form select {
+.lift-page .register .h-bottom .hb-right form input,
+.lift-page .register .h-bottom .hb-right form select {
   height: 46px;
   margin-bottom: 12px;
 }
@@ -3971,5 +3976,40 @@ font-weight: 900;;
   }
   .lift-page body .speakers .s-block .subs .min-title {
     padding: 0;
+  }
+  .lift-page .programm .programm__container {
+    padding-left: 15px;
+    background-size: auto 380px;
+    background-position: top right;
+  }
+  .lift-page .programm-item__info-cube, .lift-page .programm-item__image {
+    display: block !important;
+    max-width: 50%;
+  }
+  .lift-page .programm-item__content {
+    background-color: #fff;
+    padding-top: 15px;
+  }
+  .lift-page .programm-item__inner {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  header {
+    margin-top: 0;
+  }
+
+  .bg,
+  header .container_header {
+    margin-top: 0;
+    padding-top: 20px;
+  }
+
+  header .header_text h1 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 1.1;
+    margin-bottom: -5px;
   }
 }
