@@ -2732,7 +2732,7 @@ font-weight: 900;;
 }
 .lift-page .programm-item__info-cube {
   padding: 10px 10px 20px 10px;
-  border: 5px solid #00bde3;
+  border: 5px solid #1e82ff;
 }
 @media (min-width: 1025px) {
   .lift-page .programm-item__info-cube {
@@ -2762,7 +2762,7 @@ font-weight: 900;;
   background-color: #f70f31;
 }
 .lift-page .programm-item__info-date_2 {
-  background-color: #00bde3;
+  background-color: #1e82ff;
 }
 .lift-page .programm-item__info-title {
   margin-bottom: 10px;
@@ -2778,7 +2778,7 @@ font-weight: 900;;
   color: #f70f31;
 }
 .lift-page .programm-item__info-subtitle_2 {
-  color: #00bde3;
+  color: #1e82ff;
 }
 .lift-page .programm-item__info-name {
   position: relative;
@@ -2812,7 +2812,7 @@ font-weight: 900;;
   color: #f70f31;
 }
 .lift-page .programm-item__content-title_2 {
-  color: #00bde3;
+  color: #2c8aff;
 }
 .lift-page .programm-item__list {
   font-size: 16px;
@@ -2849,7 +2849,7 @@ font-weight: 900;;
   box-shadow: 0 2px 6px 0 rgba(246, 15, 49, 0.5);
 }
 .lift-page .programm-item__list_2 li:before {
-  background-color: #00bde3;
+  background-color: #2c8aff;
   -webkit-box-shadow: 0 2px 6px 0 rgba(1, 152, 232, 0.51);
   box-shadow: 0 2px 6px 0 rgba(1, 152, 232, 0.51);
 }
@@ -4004,6 +4004,7 @@ font-weight: 900;;
   header .container_header {
     margin-top: 0;
     padding-top: 20px;
+    padding-bottom: 50px;
   }
 
   header .header_text h1 {
