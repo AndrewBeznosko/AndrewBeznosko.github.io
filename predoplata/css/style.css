@@ -892,3 +892,25 @@ body .footer .soc {
 .t415__col + .t415__col {
     margin-left: 60px;
 }
+
+@media (max-width: 767.98px) {
+    .pro-container h1 {
+        font-size: 34px;
+    }
+
+    .t415__col + .t415__col {
+        margin-left: 20px;
+    }
+
+    .t-title_lg {
+        font-size: 54px;
+    }
+
+    .g-container::before {
+        display: none;
+    }
+
+    body .g-container {
+        width: 100%;
+    }
+}
