@@ -156,7 +156,7 @@ body.f-nav .top_container {
   background-size: cover;
   position: relative;
   padding-top: 90px;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
 }
 
 .bg::before {
