@@ -1,0 +1,15 @@
+.login {
+    &__title {
+        font-size: 80px;
+        line-height: 120%;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    &__undertitle {
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 120%;
+        margin: 0;
+    }
+}

@@ -1,0 +1,74 @@
+// ============================================================================
+// common
+// ============================================================================ 
+.nav-link.text-muted {
+    font-weight: 500;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+// ============================================================================
+// login
+// ============================================================================ 
+
+.login-page {
+    background-image: url('../img/login__bg.png');
+    background-size: 51.25% auto;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+}
+
+// ============================================================================
+// card--form
+// ============================================================================ 
+.card {
+    &--form {
+        background: #1A252F;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 15px rgba(0, 0, 0, 0.06);
+        border-radius: 9px;
+        width: 460px;
+        display: flex;
+        align-items: center;
+        padding: 40px;
+    }
+
+    &__btn {
+        width: 176px;
+    }
+
+    &__btn-link {
+        font-size: 15px;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.card-body--form {
+    max-width: 320px;
+}
+
+.card-title--form {
+    font-size: 24px;
+    line-height: 165%;
+    margin-bottom: 10px;
+}
+
+.card-text--form {
+    font-size: 15px;
+    line-height: 150%;
+}
+
+.card-header--form {
+    margin-bottom: 20px; 
+}
+
+// navbar 
+.navbar-nav {
+    max-width: 400px;
+    width: 100%;
+    justify-content: space-between;
+}

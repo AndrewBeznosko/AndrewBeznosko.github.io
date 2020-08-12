@@ -1,0 +1,121 @@
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1190px;
+    }
+}
+
+.navbar-dark {
+    .navbar-nav {
+        .nav-link {
+            color: white;
+            font-size: 14px;
+            line-height: 150%;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// ============================================================================
+// colors
+// ============================================================================ 
+.bg-dark {
+    background-color: #101820 !important;
+}
+
+.bg-dark-2 {
+    background-color: #1A252F;
+}
+
+.text-muted {
+    color: #86909C !important;
+}
+
+.text-success {
+    color: #51C100 !important;
+}
+
+// ============================================================================
+// buttons
+// ============================================================================ 
+
+.btn:not(.btn-link) {
+    text-transform: uppercase;
+    padding: 14px 32px;
+    font-size: 14px;
+    line-height: 145%;
+    letter-spacing: 0.5px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.btn-success {
+    background-color: #51C100;
+    border-color: #51C100;
+}
+
+// ============================================================================
+// forms
+// ============================================================================ 
+.form-label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 150%;
+    color: #6D7885;
+}
+
+.form-control {
+    min-height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    line-height: 150%;
+    color: #818C99;
+    border-radius: 8px;
+
+    &:focus {
+        border-color: #51C100;
+    }
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-btns {
+    padding-top: 30px;
+}
+
+.form-check-label {
+    font-size: 15px;
+    line-height: 150%;
+    color: #818C99;
+}
+
+.form-check-input {
+    margin: 0px 8px 2px 0px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    background-color: transparent; 
+
+    &:checked {
+        background-color: transparent;
+        border-color: #51C100;
+
+        &[type=radio] {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%2351C100'/%3e%3c/svg%3e"); 
+        }
+    }
+}
+
+.form-check-inline {
+    display: flex;
+    align-items: center;
+}
