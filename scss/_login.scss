@@ -1,4 +1,11 @@
 .login {
+    &-page {
+        background-image: url('../img/login__bg.png');
+        background-size: 51.25% auto;
+        background-position: 0 50%;
+        background-repeat: no-repeat;
+    }
+
     &__title {
         font-size: 80px;
         line-height: 120%;
@@ -11,5 +18,24 @@
         font-size: 32px;
         line-height: 120%;
         margin: 0;
+    }
+
+    @media (max-width: 991.98px) {
+        &-page {
+            background-size: 100% auto;
+            background-position: 0 0;
+        }
+
+        &__title {
+            font-size: 50px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        &__undertitle {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
     }
 }

@@ -4,13 +4,6 @@ body {
 @media (min-width: 1400px) {
   .container {
     max-width: 1190px; } }
-.navbar-dark .navbar-nav .nav-link {
-  color: white;
-  font-size: 14px;
-  line-height: 150%; }
-  .navbar-dark .navbar-nav .nav-link:hover {
-    text-decoration: underline; }
-
 .bg-dark {
   background-color: #101820 !important; }
 
@@ -80,16 +73,13 @@ body {
   display: flex;
   align-items: center; }
 
+@media (max-width: 991.98px) {
+  .form-control {
+    font-size: 16px; } }
 .nav-link.text-muted {
   font-weight: 500; }
   .nav-link.text-muted:hover {
     text-decoration: underline; }
-
-.login-page {
-  background-image: url("../img/login__bg.png");
-  background-size: 51.25% auto;
-  background-position: 0 50%;
-  background-repeat: no-repeat; }
 
 .card--form {
   background: #1A252F;
@@ -106,6 +96,14 @@ body {
   text-decoration: none; }
   .card__btn-link:hover {
     text-decoration: underline; }
+@media (max-width: 991.98px) {
+  .card--form {
+    padding: 20px 15px 30px; }
+  .card__btn {
+    width: 160px; } }
+@media (max-width: 576px) {
+  .card--form {
+    width: 100%; } }
 
 .card-body--form {
   max-width: 320px; }
@@ -122,11 +120,45 @@ body {
 .card-header--form {
   margin-bottom: 20px; }
 
+@media (max-width: 991.98px) {
+  .card-title--form {
+    font-size: 22px;
+    line-height: 150%;
+    margin-bottom: 5px; } }
 .navbar-nav {
   max-width: 400px;
   width: 100%;
   justify-content: space-between; }
 
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  font-size: 14px;
+  line-height: 150%; }
+  .navbar-dark .navbar-nav .nav-link:hover {
+    text-decoration: underline; }
+
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    max-width: 100%; }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 150%;
+    text-align: center; }
+
+  .navbar-collapse {
+    align-items: center;
+    width: 100%;
+    background-color: #1a252f;
+    border-radius: 8px;
+    margin-top: 15px; }
+
+  .navbar-nav .dropdown-menu {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto; } }
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: 700;
@@ -145,6 +177,11 @@ body {
   color: #fff;
   border-bottom-color: #fff; }
 
+.login-page {
+  background-image: url("../img/login__bg.png");
+  background-size: 51.25% auto;
+  background-position: 0 50%;
+  background-repeat: no-repeat; }
 .login__title {
   font-size: 80px;
   line-height: 120%;
@@ -155,5 +192,17 @@ body {
   font-size: 32px;
   line-height: 120%;
   margin: 0; }
+@media (max-width: 991.98px) {
+  .login-page {
+    background-size: 100% auto;
+    background-position: 0 0; }
+  .login__title {
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center; }
+  .login__undertitle {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px; } }
 
 /*# sourceMappingURL=main.css.map */
