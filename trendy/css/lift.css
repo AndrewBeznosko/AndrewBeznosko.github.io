@@ -4024,6 +4024,9 @@ font-weight: 900;;
 .sec-form {
   background-color: #eeeeee;
   padding: 60px 0 !important;
+  background-image: url("../img/111.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 .sec-form__col-left {
   padding-right: 60px !important;
@@ -4260,8 +4263,8 @@ font-weight: 900;;
     margin: 5px 0 !important;
   }
   .sec-form__author-name {
-    font-size: 22px;
-    line-height: 1.2;
+    font-size: 20px;
+    line-height: 1;
     margin-bottom: 5px !important;
   }
   .sec-form__title {
@@ -4283,6 +4286,10 @@ font-weight: 900;;
   }
   .b-form__undertitle {
     font-size: 17px;
+  }
+  .b-form__input {
+    height: 40px;
+    margin-bottom: 10px !important;
   }
 
   .bonuce-block__text {
