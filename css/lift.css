@@ -4023,6 +4023,7 @@ font-weight: 900;;
   padding: 60px 0 !important;
   background-size: cover;
   background-position: center center;
+  background-image: url("../img/111.jpg");
 }
 .sec-form__col-left {
   padding-right: 60px !important;
@@ -4076,6 +4077,10 @@ font-weight: 900;;
   font-family: 'PT Sans', Arial, sans-serif;
   line-height: 1.2;
   font-weight: 500;
+}
+
+.sec-form2 {
+  background-image: none;
 }
 
 .b-form {
