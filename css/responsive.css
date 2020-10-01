@@ -1,0 +1,239 @@
+@media only screen and (max-width: 1025px) {
+  .alien body {
+    min-width: initial;
+  }
+  .alien .container {
+    padding: 0;
+    width: 748px;
+  }
+  .alien header {
+    padding-bottom: 107px;
+  }
+  .alien .header_text h1 {
+    font-size: 40px;
+  }
+  .alien .header_form {
+    width: 900px;
+    margin-left: -450px;
+    bottom: -150px;
+  }
+  .alien .header_form button.g_button {
+    width: 287px;
+    font-size: 16px;
+  }
+  .alien .header_icons {
+    width: 242px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .alien .hi_item {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+  .alien .w_item {
+    width: 182px;
+  }
+  .alien .all_time_text {
+    padding: 40px;
+  }
+  .alien .all_time_pict {
+    display: none;
+  }
+  .alien .map_item {
+    width: 192px;
+  }
+  .alien .maps_list {
+    padding: 0;
+  }
+  .alien .ml_name {
+    position: relative;
+    width: auto;
+    top: auto;
+    margin-bottom: 20px;
+    height: auto;
+  }
+  .alien .maps_list ul {
+    padding-left: 0;
+    background: transparent;
+  }
+  .alien #maps {
+    padding: 40px 0 75px 0;
+  }
+  .alien .spicker_av {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    position: relative;
+    float: none;
+    overflow: hidden;
+    margin: 0 auto 50px auto;
+  }
+  .alien .spicker_av img {
+    width: 100%;
+  }
+  .alien .spicker_descript {
+    float: none;
+    width: auto;
+  }
+  .alien #spicker,
+  .alien #repl,
+  .alien #why {
+    margin-bottom: 40px;
+  }
+  .alien .repl_item {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .alien .repl_item iframe {
+    height: 300px;
+  }
+  .alien .spicker_descript .section_title {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .alien .container {
+    width: auto;
+    padding: 20px;
+  }
+  .alien .container_header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .alien header .container_header {
+    margin-top: -50px;
+    margin-bottom: -90px;
+  }
+  .alien .header_text {
+    -webkit-order: 0;
+    -ms-order: 0;
+    order: 0;
+  }
+  .alien .header_icons_box {
+    -webkit-order: 2;
+    -ms-order: 2;
+    order: 2;
+    margin-top: 110px;
+  }
+  .alien .header_form {
+    -webkit-order: 1;
+    -ms-order: 1;
+    order: 1;
+  }
+  .alien .header_text > p span {
+    font-size: 14px;
+    display: inline;
+    padding: 4px 5px;
+  }
+  .alien .container_header {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .alien .window_1,
+  .alien .window_2,
+  .alien .window_3 {
+    display: none;
+  }
+  .alien header {
+    padding-top: 0;
+  }
+  .alien .header_icons {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .alien header,
+  .alien footer {
+    background-size: cover;
+  }
+  .alien .header_form {
+    width: auto;
+    position: relative;
+    margin-left: 0;
+    bottom: 0;
+    left: auto;
+  }
+  .alien input.input_text {
+    width: auto;
+    width: 100%;
+    float: none;
+  }
+  .alien .header_form button.g_button {
+    width: 100%;
+    float: none;
+  }
+  .alien .w_item,
+  .alien .map_item {
+    width: auto;
+    float: none;
+    margin: 0 auto 15px auto;
+  }
+  .alien .all_time {
+    margin: 0;
+  }
+  .alien .all_time_text {
+    width: auto;
+  }
+  .alien .repl_item iframe {
+    height: 250px;
+  }
+  .alien header,
+  .alien #maps {
+    margin-bottom: 0;
+  }
+  .alien .all_time_text {
+    font-size: 18px;
+    padding: 20px;
+  }
+  .alien #maps .header_form {
+    bottom: 0;
+  }
+  .alien .menu_container {
+    display: none;
+  }
+  .alien .btn_footer a {
+    font-size: 11px;
+  }
+  .alien .section_title {
+    font-size: 32px;
+  }
+  .alien .header_text > p {
+    margin-bottom: 30px;
+  }
+  .alien .top_container {
+    display: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .alien header .video-row {
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .alien #maps .header_form {
+    left: 0;
+  }
+  .alien header .header_text {
+    margin-right: 0;
+  }
+  .alien header .header_text h1 {
+    font-size: 35px;
+    line-height: 1.1;
+    margin-bottom: -20px;
+  }
+  .alien .header_form {
+    width: 100%;
+  }
+  .alien header {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .alien .lift-page .authors-item_2 .authors-item__info-title,
+  .alien .lift-page .authors-item_2 .authors-item__list strong {
+    color: #fff;
+  }
+}
