@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.6735afb5a71f88d14d884ebecca09a19.js"
+  "/precache-manifest.f70e6f4197ad3ef448ff10e0b170821b.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "smart-tek-test-task"});
