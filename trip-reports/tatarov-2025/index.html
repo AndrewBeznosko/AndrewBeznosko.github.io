@@ -668,7 +668,7 @@
                 object-fit: contain;
             }
             
-            /* Page break optimizations */
+            /* Enhanced page break optimizations */
             .summary-cards,
             .fuel-summary,
             .person-totals,
@@ -679,10 +679,12 @@
             .places-section,
             .route-section {
                 page-break-inside: avoid;
+                margin-bottom: 20px;
             }
             
             .expenses-table {
                 page-break-inside: auto;
+                margin-bottom: 25px;
             }
             
             .expenses-table tr {
@@ -692,14 +694,23 @@
             
             .expenses-table thead {
                 display: table-header-group;
+                page-break-after: avoid;
             }
             
             .expenses-table tfoot {
                 display: table-footer-group;
             }
             
+            /* Better spacing for headings */
             h1, h2, h3 {
                 page-break-after: avoid;
+                margin-top: 25px;
+                margin-bottom: 15px;
+            }
+            
+            h1.section-title {
+                margin-top: 0;
+                margin-bottom: 20px;
             }
             
             /* Ensure inline statistics boxes don't break */
@@ -707,28 +718,223 @@
             div[style*="background: #fff3e0"],
             div[style*="background: linear-gradient(135deg, #e3f2fd"] {
                 page-break-inside: avoid;
-                margin-top: 10px;
-                margin-bottom: 10px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            
+            /* Better table formatting for print */
+            .expenses-table th,
+            .expenses-table td {
+                padding: 6px 4px;
+                font-size: 0.75rem;
+            }
+            
+            .date-col {
+                width: 60px;
+                font-size: 0.7rem;
+            }
+            
+            /* Optimize route maps for print */
+            .route-map {
+                page-break-inside: avoid;
+                margin: 20px 0;
+            }
+            
+            .route-map img {
+                max-height: 120mm;
+                object-fit: contain;
+                page-break-inside: avoid;
+            }
+            
+            /* Better fuel summary spacing */
+            .fuel-item {
+                font-size: 0.8rem;
+                margin-bottom: 6px;
+            }
+            
+            /* Optimize grid layouts for print */
+            .summary-cards,
+            .person-totals,
+            .category-stats,
+            .hiking-stats {
+                gap: 12px;
+            }
+            
+            /* Ensure content fits better on pages */
+            .page {
+                padding: 12mm;
             }
         }
 
         @media (max-width: 768px) {
+            .print-btn {
+                display: none;
+            }
+            
+            body {
+                background: white;
+                padding: 0;
+                margin: 0;
+            }
+            
             .page {
                 width: 100%;
+                min-height: auto;
                 padding: 15px;
-                margin: 10px;
+                margin: 0;
+                box-shadow: none;
+                page-break-after: auto;
             }
+            
+            .header {
+                padding: 20px 15px;
+                margin-bottom: 20px;
+            }
+            
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .header p {
+                font-size: 1rem;
+            }
+            
             .summary-cards { 
-                grid-template-columns: 1fr; 
+                grid-template-columns: 1fr;
+                gap: 15px;
+                margin-bottom: 20px;
             }
+            
+            .summary-card {
+                padding: 20px;
+            }
+            
+            .summary-card h3 {
+                font-size: 1.8rem;
+            }
+            
+            .fuel-summary {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+            
             .person-totals { 
-                grid-template-columns: 1fr; 
+                grid-template-columns: 1fr;
+                gap: 15px;
+                margin-bottom: 20px;
             }
+            
+            .person-card {
+                padding: 20px;
+            }
+            
+            .settlements {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+            
             .category-stats {
                 grid-template-columns: 1fr;
+                gap: 15px;
+                margin-bottom: 20px;
             }
+            
+            .category-item {
+                padding: 20px;
+            }
+            
             .hiking-stats {
                 grid-template-columns: 1fr;
+                gap: 15px;
+                margin-bottom: 20px;
+            }
+            
+            .hiking-card {
+                padding: 20px;
+            }
+            
+            .expenses-table {
+                font-size: 0.8rem;
+                margin-bottom: 10px;
+                width: 100%;
+                overflow-x: auto;
+                display: block;
+            }
+            
+            .expenses-table thead,
+            .expenses-table tbody,
+            .expenses-table tr {
+                display: table;
+                width: 100%;
+                table-layout: fixed;
+            }
+            
+            .expenses-table thead {
+                width: 100%;
+            }
+            
+            .expenses-table tr {
+                display: table-row;
+            }
+            
+            .expenses-table th,
+            .expenses-table td {
+                display: table-cell;
+                padding: 6px 4px;
+                border-bottom: 1px solid #eee;
+                vertical-align: top;
+                word-wrap: break-word;
+            }
+            
+            .expenses-table th:nth-child(1),
+            .expenses-table td:nth-child(1) {
+                width: 15%;
+                font-size: 0.75rem;
+            }
+            
+            .expenses-table th:nth-child(2),
+            .expenses-table td:nth-child(2) {
+                width: 20%;
+            }
+            
+            .expenses-table th:nth-child(3),
+            .expenses-table td:nth-child(3) {
+                width: 45%;
+            }
+            
+            .expenses-table th:nth-child(4),
+            .expenses-table td:nth-child(4) {
+                width: 20%;
+                text-align: right;
+                font-weight: 600;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+            }
+            
+            .subsection-title {
+                font-size: 1.2rem;
+                margin-bottom: 15px;
+                margin-top: 20px;
+            }
+            
+            .place-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .route-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .route-map img {
+                max-width: 100%;
+                height: auto;
             }
         }
     </style>
@@ -789,7 +995,7 @@
         <h2 class="section-title">💰 Розрахунки по учасниках</h2>
         <div class="person-totals">
             <div class="person-card">
-                <h3>Ви</h3>
+                <h3>Андрій</h3>
                 <div class="amount">5,007₴</div>
             </div>
             <div class="person-card">
@@ -805,10 +1011,10 @@
         <div class="settlements">
             <h3>💰 Підсумкові розрахунки</h3>
             <div class="settlement-item">
-                Ви → Діма: 1,168₴
+                Андрій → Діма: 1,168₴
             </div>
             <div class="settlement-item">
-                Ви → Антон: 1,657₴
+                Андрій → Антон: 1,657₴
             </div>
         </div>
     </div>
@@ -827,24 +1033,24 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td class="date-col">29.08</td><td>Ви</td><td>сніданок в Hotel 4x4 біля Рівного</td><td style="text-align: right;">990₴</td></tr>
+                <tr><td class="date-col">29.08</td><td>Андрій</td><td>сніданок в Hotel 4x4 біля Рівного</td><td style="text-align: right;">990₴</td></tr>
                 <tr><td class="date-col">29.08</td><td>Діма</td><td>10л пива</td><td style="text-align: right;">500₴</td></tr>
                 <tr><td class="date-col">29.08</td><td>Діма</td><td>будинок в Татарові</td><td style="text-align: right;">5,500₴</td></tr>
                 <tr class="fuel-row"><td class="date-col">29.08</td><td>Антон</td><td>заправився вранці газом</td><td style="text-align: right;">1,363₴</td></tr>
                 <tr class="fuel-row"><td class="date-col">29.08</td><td>Антон</td><td>заправився газом</td><td style="text-align: right;">1,546₴</td></tr>
                 <tr><td class="date-col">29.08</td><td>Антон</td><td>сігари</td><td style="text-align: right;">2,498₴</td></tr>
-                <tr><td class="date-col">29.08</td><td>Ви</td><td>мигдаль та редбул</td><td style="text-align: right;">430₴</td></tr>
-                <tr><td class="date-col">29.08</td><td>Ви</td><td>продукти в АТБ</td><td style="text-align: right;">1,521₴</td></tr>
+                <tr><td class="date-col">29.08</td><td>Андрій</td><td>мигдаль та редбул</td><td style="text-align: right;">430₴</td></tr>
+                <tr><td class="date-col">29.08</td><td>Андрій</td><td>продукти в АТБ</td><td style="text-align: right;">1,521₴</td></tr>
                 <tr><td class="date-col">30.08</td><td>Діма</td><td>поїли в Cufer</td><td style="text-align: right;">2,500₴</td></tr>
                 <tr><td class="date-col">30.08</td><td>Діма</td><td>таксисту Григорію</td><td style="text-align: right;">300₴</td></tr>
-                <tr><td class="date-col">30.08</td><td>Ви</td><td>таксисту Григорію</td><td style="text-align: right;">60₴</td></tr>
-                <tr><td class="date-col">30.08</td><td>Ви</td><td>Крамниця Люкс (редбул та банани)</td><td style="text-align: right;">324₴</td></tr>
-                <tr><td class="date-col">31.08</td><td>Ви</td><td>Forest House сніданок волосатою свининою</td><td style="text-align: right;">512₴</td></tr>
+                <tr><td class="date-col">30.08</td><td>Андрій</td><td>таксисту Григорію</td><td style="text-align: right;">60₴</td></tr>
+                <tr><td class="date-col">30.08</td><td>Андрій</td><td>Крамниця Люкс (редбул та банани)</td><td style="text-align: right;">324₴</td></tr>
+                <tr><td class="date-col">31.08</td><td>Андрій</td><td>Forest House сніданок волосатою свининою</td><td style="text-align: right;">512₴</td></tr>
                 <tr><td class="date-col">31.08</td><td>Антон</td><td>чани</td><td style="text-align: right;">2,400₴</td></tr>
-                <tr><td class="date-col">31.08</td><td>Ви</td><td>таксі Uklon</td><td style="text-align: right;">338₴</td></tr>
+                <tr><td class="date-col">31.08</td><td>Андрій</td><td>таксі Uklon</td><td style="text-align: right;">338₴</td></tr>
                 <tr class="fuel-row"><td class="date-col">31.08</td><td>Антон</td><td>заправився газом на UPG</td><td style="text-align: right;">683₴</td></tr>
                 <tr class="fuel-row"><td class="date-col">31.08</td><td>Антон</td><td>заправились газом на WOG</td><td style="text-align: right;">1,200₴</td></tr>
-                <tr><td class="date-col">31.08</td><td>Ви</td><td>mcdonald's</td><td style="text-align: right;">832₴</td></tr>
+                <tr><td class="date-col">31.08</td><td>Андрій</td><td>mcdonald's</td><td style="text-align: right;">832₴</td></tr>
             </tbody>
         </table>
     </div>
